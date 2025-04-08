@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.register-page-container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+}
+
+/* Left Side - Image */
+.register-page-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-page-image {
+  width: 75%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+/* Right Side - Form */
+.register-page-form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.register-page-form-box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  text-align: center;
+}
+
+.register-page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.register-page-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.register-page-input-group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.register-page-input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+/* Focus effect */
+.register-page-input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Button */
+.register-page-button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.register-page-button:hover {
+  background: #0056b3;
+}
+
+/* Login link */
+.register-page-text {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #777;
+}
+
+.register-page-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-page-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .register-page-container {
+    flex-direction: column; /* Stack form and image on smaller screens */
+    height: auto;
+    padding: 20px;
+  }
+
+  .register-page-image-container {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  .register-page-form-container {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .register-page-form-box {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-page-form-box {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .register-page-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .register-page-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
