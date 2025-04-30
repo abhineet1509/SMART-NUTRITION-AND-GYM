@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AppContext } from "../context/AppContext"; // ✅ Ensure correct import
+import { AppContext } from "../context/AppContext"; 
 import "./Login.css";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -22,7 +22,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [authState, setAuthState] = useState("Login"); 
 
-  const { backendUrl, setIsLoggedin } = useContext(AppContext);
+  const { backendUrl, setIsLoggedin , setUserName } = useContext(AppContext);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -48,6 +48,7 @@ const Login = () => {
 
       if (data.success) {
         setIsLoggedin(true);
+        setUserName(data.user.name);
         navigate("/");
         toast.success(data.message || "Login successful!");
       } else {

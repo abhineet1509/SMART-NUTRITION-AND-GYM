@@ -297,7 +297,7 @@
   text-align: center;
 }
 
-/* FAQ Items */
+
 .faq-list {
   width: 100%;
 }
@@ -309,7 +309,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* FAQ Question */
 .faq-question {
   display: flex;
   justify-content: space-between;
@@ -333,4 +332,117 @@
   font-size: 16px;
   color: #555;
   display: block;
+}
+/* Responsive for tablets (<= 900px) */
+@media (max-width: 900px) {
+  .faq-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq-image-container,
+  .faq-content-container {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .faq-divider {
+    display: none;
+  }
+
+  .package-title {
+    font-size: 80px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    text-align: center;
+  }
+
+  .package-buttons {
+    bottom: 8%;
+    flex-wrap: wrap;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-top: 0;
+  }
+}
+
+/* Responsive for small screens (<= 600px) */
+@media (max-width: 600px) {
+  .packages-container {
+    padding: 30px 15px;
+  }
+
+  .package {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+  }
+
+  .package-title {
+    font-size: 50px;
+    white-space: normal;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .package-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .package-buttons {
+    flex-direction: column;
+    gap: 10px;
+    bottom: 5%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+
+  .map-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
+/* Responsive for very small devices (<= 400px) */
+@media (max-width: 400px) {
+  .package-title {
+    font-size: 36px;
+    top: 30%;
+  }
+
+  .map-links {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-question h3 {
+    font-size: 15px;
+  }
 }

@@ -15,6 +15,7 @@ import Payment from "./pages/Payment";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ChatBot from "./Components/Chatbot";
 import Explore from "./pages/Explore";
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,7 @@ const App = () => {
 
   return (
     <>
-      <ToastContainer /> {/* ✅ Placed properly */}
+      <ToastContainer /> 
       {loading ? (
         <div className="loader-container">
           <HashLoader loading={true} size={80} color={"#171718"} />
@@ -64,6 +65,7 @@ const AppContent = () => {
       </Routes>
       
       {showNavAndFooter && <Footer />}
+      <ChatBot />
     </>
   );
 };

@@ -1,17 +1,13 @@
 import React from "react";
 import "./Explore.css";
-
 const Explore = () => {
   return (
     <div className="tools-page">
-      {/* Top-right Header / Navigation */}
       <header className="tools-header">
-        <a href="#!" className="tools-btn">
+        <a href="https://order.nia.nih.gov/sites/default/files/2024-05/get-fit-life-book.pdf" className="tools-btn">
           Get started for free
         </a>
       </header>
-
-      {/* Main Content Section */}
       <section className="tools-intro">
         <h1 className="tools-title">Our tools</h1>
         <p className="tools-subtitle">
@@ -19,10 +15,7 @@ const Explore = () => {
           fashion brands, from customization to scalability.
         </p>
       </section>
-
-      {/* Floating Cards Container */}
       <div className="tools-cards-container">
-        {/* Card 1 */}
         <div className="tools-card card1">
           <img
             src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -30,8 +23,6 @@ const Explore = () => {
             className="card-img"
           />
         </div>
-
-        {/* Card 2 */}
         <div className="tools-card card2">
           <img
             src="https://images.unsplash.com/flagged/photo-1556746834-1cb5b8fabd54?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -39,8 +30,6 @@ const Explore = () => {
             className="card-img"
           />
         </div>
-
-        {/* Card 3 */}
         <div className="tools-card card3">
           <img
             src="https://images.unsplash.com/photo-1682048682610-20a91f10b29c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -48,8 +37,6 @@ const Explore = () => {
             className="card-img"
           />
         </div>
-
-        {/* Card 5 */}
         <div className="tools-card card5">
           <img
             src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -161,5 +148,4 @@ const Explore = () => {
     </div>
   );
 };
-
 export default Explore;

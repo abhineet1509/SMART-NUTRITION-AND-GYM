@@ -12,7 +12,7 @@ const Home = () => {
         Your browser does not support the video tag.
       </video>
       <div className="bottom-text">
-        <h2>FitTech</h2>
+        <h2>FitWork</h2>
       </div>
     </div>
   );

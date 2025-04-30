@@ -46,4 +46,34 @@
     display: none; /* Hide content until loader disappears */
   }
   
-  
+  /* Responsive styles */
+@media (max-width: 1200px) {
+  .bottom-text h2 {
+    font-size: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-text h2 {
+    font-size: 120px;
+  }
+
+  .loader-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-text h2 {
+    font-size: 80px;
+  }
+
+  .home-container {
+    height: auto;
+  }
+
+  .background-video {
+    object-position: center;
+  }
+}

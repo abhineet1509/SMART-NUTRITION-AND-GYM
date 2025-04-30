@@ -100,15 +100,14 @@ const Packages = () => {
           <h2 className="package-title">Nutrition</h2>
           <div className="package-buttons">
             <Link to="/pricing" className="btn explore-btn">
-              Explore Plus
+              $ Premium
             </Link>
-            <button className="btn inventory-btn">$ Premium</button>
+            <button className="btn inventory-btn">Explore Us</button>
           </div>
         </div>
       </section>
 
       <div className="faq-section">
-      {/* Left side: Image (Always Visible) */}
       <div className="faq-image-container">
         <img
           src="https://images.unsplash.com/photo-1526676537331-7747bf8278fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHJ1bm5pbmd8ZW58MHx8MHx8fDA%3D"
