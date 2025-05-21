@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build",
-      
-    }
-  ],
+  "builds": null,  // This forces Vercel to use UI settings
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/build/$1" }  // Change "build" to your output dir
   ]
 }
