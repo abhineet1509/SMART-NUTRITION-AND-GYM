@@ -38,7 +38,7 @@ export const register = async (req, res) => {
                 html: `
                     <div style="max-width: 500px; margin: auto; padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 8px;">
                         <h2 style="text-align: center; color: #333;">Welcome to [Your App Name] 🎉</h2>
-                        <p style="font-size: 16px; color: #555;">Hi <strong>${name}</strong>,</p>
+                        <p style="font-size: 16px; color: #555;">Hi <strong>Fit Work</strong>,</p>
                         <p style="font-size: 16px; color: #555;">Thank you for signing up! Your account has been successfully created. You can now log in and start using our services.</p>
                         
                         <div style="text-align: center; margin: 20px 0;">
