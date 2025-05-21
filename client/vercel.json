@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "builds": null,  // This forces Vercel to use UI settings
+  "dist": null, 
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/build/$1" }  // Change "build" to your output dir
+    { "src": "/(.*)", "dest": "/dist/index.html" }  
   ]
 }
