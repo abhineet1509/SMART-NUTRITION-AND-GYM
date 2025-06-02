@@ -14,7 +14,11 @@ const port = process.env.PORT || 4000;
 // MongoDB connection
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://smart-nutrition-and-gym-bcbn.vercel.app'
+];
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ origin: allowedOrigins, credentials: true }));
