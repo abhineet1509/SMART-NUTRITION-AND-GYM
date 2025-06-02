@@ -16,7 +16,7 @@ connectDB();
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://smart-nutrition-and-gym-bcbn.vercel.app'
+  'https://fitwork-7ljs.onrender.com'
 ];
 
 app.use(express.json());
