@@ -15,7 +15,6 @@ const port = process.env.PORT || 4000;
 connectDB();
 
 const allowedOrigins = [
-  'http://localhost:5173',
   'https://smart-nutrition-and-gym.onrender.com'
 ];
 
