@@ -16,7 +16,7 @@ connectDB();
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://fitwork-7ljs.onrender.com'
+  'https://smart-nutrition-and-gym.onrender.com'
 ];
 
 app.use(express.json());
